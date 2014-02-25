@@ -4,10 +4,9 @@
 		<meta charset="utf-8">
 		<meta name ="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>Culttu.me</title>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/foundation.min.css"/>
 		<link rel="stylesheet" href="css/normalize.css" type="text/css">
-		<script src="js/vendor/modernizr.js"></script>
+		<script src="js/modernizr.js"></script>
 		<link rel="stylesheet" href="css/grid.css" type="text/css">
 		<link rel="stylesheet" href="css/style.css" type="text/css">
 	</head><!--end HEAD-->
@@ -17,7 +16,7 @@
 			<div class="container clearfix">
 
 				<div id="logo" class="grid_3">
-					<img src="images/logo_2.png">
+					<a href="index.html"><img src="images/logo.png" heigth="100px"></a>
 				</div>
 				<div id="nav" class="grid_9 omega">
 					<ul class="navigation">
@@ -40,17 +39,18 @@
 					<p><a href="mailto:" target="_blank">Recibimos tus sugerencias</a>. </p>
 					<p>Siguenos en nuestras redes sociales!</p>
 					<p>
-						<a href="https://twitter.com/culttume" target="_blank"><img src="images/Twitter.png"></a> 
+						<a href="https://facebook.com/culttume" target="_blank"><img src="images/img1.png" width="60px" height="60px"></a>
+						<a href="" target="_blank"><img src="images/img2.png" width="60px" height="60px"></a> 
+						<a href="https://twitter.com/culttume" target="_blank"><img src="images/img3.png" width="60px" height="60px"></a> 
 					</p>
 				</div>
 				<div id="decorative" class="grid_5 omega">
 					<video width="400" height="280" controls>
-	 				<source src="movie.mp4" type="video/mp4">
-	  				<source src="movie.ogg" type="video/ogg">
-						Tu navegador no soporta video HTML5
+		 				<source src="movie.mp4" type="video/mp4">
+		  				<source src="movie.ogg" type="video/ogg">
+						<p>Tu navegador no soporta video HTML5</p>
 					</video>
 				</div>
-
 			</div>
 		</div>
 
@@ -65,11 +65,16 @@
 
 				<div id="decorative" class="grid_5 omega">
 					<form method="post" action="" class="class="large-4 medium-4 columns"">
-						<p><label for="email">Ingrese su email</label></p>
-						<p><input type="text" id="email" placeholder="micorreo@ejemplo.com"></p>
-						<p><label for="pass">Ingrese una contraseña</label></p>
-						<p><input type="password" id="pass" placeholder="**********"></p>
-						<p><input type="submit" value="enviar" id="submitForm" class="small button"></p>
+						<label for="email">Ingrese su email</label>
+						<input type="text" id="email" placeholder="micorreo@ejemplo.com">
+
+						<label for="pass">Ingrese una contraseña</label>
+						<input type="password" id="pass" placeholder="**********">
+
+						<label for="confirmPass">Confirme su contraseña</label>
+						<input type="password" id="confirmPass" placeholder="**********">
+						<p><a href="">Al suscribirme, acepto los términos y condiciones*</a></p>
+						<p><input type="submit" value="Registrarme Ahora" id="submitForm" class="small button"></p>
 					</form>
 				</div>
 
@@ -82,22 +87,37 @@
 			<div class="container clearfix">
 
 				<div id="content" class="grid_12">
-					<h1>Patrocinadores</h1>
+					<h1>Nuestros Aliados</h1>
 					<div class="row">
-	  					<div class="large-3 columns"><img src="images/2c.png"></div>
-	  					<div class="large-3 columns"><img src="images/4c.png"></div>
-	  					<div class="large-3 columns"><img src="images/9c.png"></div>
-	  					<div class="large-3 columns"><img src="images/7c.png"></div>	
+						<div class="large-2 columns">
+							<a href="http://goo.gl/xJGxsN" target="blank"><img src="images/5c.png"></a>
+						</div>
+	  					<div class="large-3 columns">
+	  						<a href="http://goo.gl/4hWJge" target="blank"><img class="hovering" src="images/2c.png"></a>
+	  					</div>
+	  					<div class="large-2 columns">
+	  						<a class="hv" href="https://apps.co/" target="blank"><img src="images/4c.png"></a>
+	  					</div>
+	  					<div class="large-2 columns">
+	  						<a href="http://goo.gl/0eOYRl" target="blank"><img src="images/7c.png"></a>
+	  					</div>
+
+	  					<div class="large-3 columns">
+	  						<a href="http://goo.gl/mHRc2F" target="blank"><img src="images/9c.png"></a>
+	  					</div>
+	  						
 					</div></p>
 					<div class="row">
-						<div class="large-2 columns"><img src="images/5c.png"></div>
-						<div class="large-3 columns"><img src="images/6c.png"></div>
-	  					<div class="large-3 columns"><img src="images/fonade.png"></div>
-					</div></p>
-					<h2>Pertenecemos a:</h2>
-					<div class="row">
+
+						<div class="large-3 columns">
+	  						<a href="http://goo.gl/mhJSLg" target="blank"><img src="images/fonade.png"></a>
+	  					</div>
 	  					<div class="large-3 columns"><img src="images/11c.png"></div>
 	  					<div class="large-3 columns"><img src="images/12c.png"></div>
+
+						<div class="large-3 columns">
+							<a href="http://goo.gl/DtmA3p" target="blank"><img src="images/6c.png"></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -111,14 +131,18 @@
 				<div id="content" class="grid_12">
 					<h1>¿Tienes Dudas?</h1>
 					<form method="post" action="" class="large-4 medium-4 columns">
-						<p><label for="name">Ingresa tu nombre</label></p>
-						<p><input type="text" id="name" placeholder="Mi Nombre"></p>
-						<p><label for="emailContac">Ingresa un email</label></p>
-						<p><input type="text" id="emailContac" placeholder="micorreo@ejemplo.com"></p>
-						<p><label for="phone">Ingresa tu móvil</label></p>
-						<p><input type="text" id="phone" placeholder="123456789"></p>
-	     				<p><label>Dejanos tus comentarios</label></p>
-	        			<p><textarea placeholder="Deja aqui tus comentarios"></textarea></p>
+						<label for="name">Ingresa tu nombre</label>
+						<input type="text" id="name" placeholder="Mi Nombre">
+
+						<label for="emailContac">Ingresa un email</label>
+						<input type="text" id="emailContac" placeholder="micorreo@ejemplo.com">
+
+						<label for="phone">Ingresa tu móvil</label>
+						<input type="text" id="phone" placeholder="123456789">
+
+	     				<label>Dejanos tus comentarios</label>
+	        			<textarea placeholder="Deja aqui tus comentarios"></textarea>
+
 						<p><input type="submit" value="enviar" id="submitForm" class="small button"></p>
 					</form>
 				</div>

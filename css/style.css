@@ -1,6 +1,8 @@
 /* Global */
+
+@import url(http://fonts.googleapis.com/css?family=Exo+2);
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Exo 2', sans-serif;
 	font-weight: 400;
 	font-size: 1em;
 	color: #8a8683;
@@ -254,9 +256,6 @@ a:visited {
 
 }
 
-
-
-
 /* Mobile */
 @media screen and (max-width: 480px) {
 
@@ -315,7 +314,12 @@ a:visited {
 #slide4 h2 {
 	line-height: 1em;
 }
-
+.hovering {opacity:0.6;} /*Opacidad inicial*/
+.hovering:hover {
+opacity:1;  /*Opacidad al pasar el mouse*/
+-webkit-transition-property: opacity; -webkit-transition-duration: 300ms; /*Tiempo de la transición varios navegadores*/
+-moz-transition-property: opacity; -moz-transition-duration: 300ms; /*Tiempo de la transición para Firefox*/
+}
 
 }
 
